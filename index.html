@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Musikquiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./javascript/functions.js"></script>
+    <script src="./javascript/increaseValueBlue.js"></script>
+    <script src="./javascript/increaseValueRed.js"></script>
+    <script src="./javascript/partey.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Musikquiz Deluxe</h1>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3">
+        <div class="grid-item-right" style="color:rgb(240, 20, 20);">Team Rot</div>
+        <div class="grid-item" style="color:rgb(240, 20, 20);" id="red-value">0</div>
+        <div class="grid-item-left">
+          <button type="button" name="button" style="background:rgba(240, 20, 20, 0.9)" onclick="increaseValueRed()">+</button>
+        </div>
+      </div>
+      <div class="grid-container-3">
+        <div class="grid-item-right" style="color:rgb(100, 100, 240);">Team Blau</div>
+        <div class="grid-item" style="color:rgb(100, 100, 240);" id="blue-value">0</div>
+        <div class="grid-item-left">
+          <button type="button" name="button2" style="background:rgba(100, 100, 240, 0.9)" onclick="increaseValueBlue()">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container">
+        <img src="./images/guitar/2.jpg" class="grid-item" onclick="changePic(this.id)" id="pic2"></img>
+        <img src="./images/vocals/2.jpg" class="grid-item" onclick="changePic(this.id)" id="pic4"></img>
+        <img src="./images/drums/2.jpg" class="grid-item" onclick="changePic(this.id)" id="pic6"></img>
+        <img src="./images/bass/2.jpg" class="grid-item" onclick="changePic(this.id)" id="pic8"></img>
+      </div>
+      <div class="grid-container">
+        <img src="./images/guitar/1.jpg" class="grid-item" onclick="changePic(this.id)" id="pic1"></img>
+        <img src="./images/vocals/1.jpg" class="grid-item" onclick="changePic(this.id)" id="pic3"></img>
+        <img src="./images/drums/1.jpg" class="grid-item" onclick="changePic(this.id)" id="pic5"></img>
+        <img src="./images/bass/1.jpg" class="grid-item" onclick="changePic(this.id)" id="pic7"></img>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <button type="button" class="partey-button" name="button3" onclick="partey()">PARTEY</button>
+    </div>
+
+
+  </body>
+</html>
