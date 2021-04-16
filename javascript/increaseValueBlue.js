@@ -5,5 +5,8 @@ function increaseValueBlue() {
   confetti({
     particleCount: 150,
     spread: 180,
+    origin: {
+      x: 0.75
+    }
   });
 }
